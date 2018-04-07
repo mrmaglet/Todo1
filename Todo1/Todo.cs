@@ -6,15 +6,22 @@ using System.Threading.Tasks;
 
 namespace Todo1
 {
-	class Todo
+	class TodoItem
 	{
 
 		private string name;
 		private bool done; 
 
-		public void Setname()
+		public string Name
 		{
+			get { return name; }
+			set { name = value; }
+		}
 
+		public bool Done
+		{
+			get { return done;  }
+			set { done = value;  }
 		}
 
 	}
